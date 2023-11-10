@@ -1,6 +1,7 @@
 # Import modules
 import matplotlib.pyplot as plt
 import pandas as pd
+import seaborn as sns
 
 
 # Define functions
@@ -52,6 +53,7 @@ def create_bar_chart(data):
 
 #Read data
 ucl = pd.read_csv("/Users/user1/Downloads/soccer-spi/spi_matches_latest-UCL.csv")
+sns.set_style("whitegrid")
 
 # Calling the functions
 create_line_plot(ucl)
