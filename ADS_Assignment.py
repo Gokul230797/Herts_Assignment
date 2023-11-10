@@ -9,7 +9,7 @@ def create_line_plot(data):
     team_1 = data['team1'].head(10)
     spi = data['spi1'].head(10)
 
-    plt.figure(figsize=(12, 6))
+    plt.figure(figsize=(17, 6))
     plt.plot(team_1, spi, label='Soccer Power Index', color='green')
     plt.title("Soccer Power Index for UCL Teams")
     plt.xlabel("Teams")
@@ -24,7 +24,6 @@ def create_pie_chart(data):
     plt.figure(figsize=(12, 6))
     plt.pie(team_counts, labels=team_counts.index, autopct='%1.1f%%', startangle=90)
     plt.title("Distribution of Matches played by Teams in UCL")
-    plt.legend()
     plt.show()
 
 def create_bar_chart(data):
